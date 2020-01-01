@@ -24,6 +24,8 @@
         </div>
     </header>
     <div class="post-content">
+        {{ .TableOfContents }}
+        <br />
         <!--featured_image-->
 
         {{ $images := findRE "<img src=\"[^\"|\\\"]*\"" .Content -}}
